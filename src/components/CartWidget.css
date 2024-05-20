@@ -1,0 +1,22 @@
+.cart {
+    position: relative;
+    padding-left: 150px;
+  }
+
+.cart-num{
+    position: absolute;
+    top: 0;
+    left: 55%;
+    background: red;
+    padding-right: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+ /* Comentarios */

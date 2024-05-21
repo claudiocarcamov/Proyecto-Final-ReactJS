@@ -31,7 +31,7 @@ export default function Item({ item }) {
           className="item--cart__button"
           onClick={() => onAdd(item, count)}
         >
-          Add to cart
+          Añadir al carrito
         </button>
       </div>
     </div>

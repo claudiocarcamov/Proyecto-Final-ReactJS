@@ -4,7 +4,7 @@ function Footer() {
         style={{
           display: "flex",
           justifyContent: "center",
-          padding: "10px",
+          padding: "15px",
           borderTop: "1px solid #ccc",
           color: "orange"
         }}

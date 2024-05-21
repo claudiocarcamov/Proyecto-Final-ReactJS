@@ -12,7 +12,7 @@ function App() {
     <Brand />
     <NavBar />
   </div>
-    <ItemListContainer greeting="Bienvenidos!"/>
+    <ItemListContainer greeting="Bienvenidos! a todos"/>
     <footer>
     <Footer />
     </footer>

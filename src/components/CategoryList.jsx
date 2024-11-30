@@ -3,19 +3,19 @@ import { NavLink } from "react-router-dom";
 
     const MIS_RUTAS = [
         {
-          path: "/category/anime",
-          label: "Anime",
+          path: "/category/home",
+          label: "Home",
         },
         {
           path: "/category/clasicos",
           label: "Clásicos",
         },
         {
-          path: "/category/muyextrano",
-          label: "Muy extraño",
+          path: "/category/anime",
+          label: "Anime",
         },
         {
-          path: "/category/objetosrandom",
+          path: "/category/random",
           label: "Objetos Random",
         },
       ];

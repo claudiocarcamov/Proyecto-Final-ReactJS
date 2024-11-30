@@ -9,7 +9,7 @@ function Footer() {
           color: "orange"
         }}
       >
-        <p>© 2024 The Random Zone. Todos los derechos reservados.</p>
+        <p>© 2024 The Random Zone. Todos los derechos reservados. y queeeeeeeeee</p>
       </div>
     );
   }

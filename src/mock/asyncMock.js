@@ -70,7 +70,7 @@ const products = [
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(products);
-      }, 3000);
+      }, 100);
     });
   };
   
@@ -78,7 +78,7 @@ const products = [
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(products.find((product) => product.id === id));
-      }, 3000);
+      }, 1000);
     });
   };
   
@@ -86,6 +86,6 @@ const products = [
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(products.filter((product) => product.category === category));
-      }, 3000);
+      },1000);
     });
   };

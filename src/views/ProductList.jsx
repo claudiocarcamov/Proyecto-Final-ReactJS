@@ -38,7 +38,7 @@ export default function ProductList() {
         <div key={product.id}>
           <h2>{product.title}</h2>
           <img
-            style={{ width: "100px", height: "100px" }}
+            style={{ width: "500px", height: "500px" }}
             src={product.image}
             alt={product.title}
           />

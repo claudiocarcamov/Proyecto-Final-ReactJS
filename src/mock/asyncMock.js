@@ -4,7 +4,7 @@ const products = [
     {
       id: 1,
       title: "Baby Yoda",
-      price: 20500,
+      price: 30500,
       description:
         "El yoda bebé como siempre lo quisiste!",
       image: "https://images.pexels.com/photos/5558237/pexels-photo-5558237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -70,7 +70,7 @@ const products = [
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(products);
-      }, 100);
+      }, 2000);
     });
   };
   
@@ -78,7 +78,7 @@ const products = [
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(products.find((product) => product.id === id));
-      }, 1000);
+      }, 2000);
     });
   };
   
@@ -86,6 +86,6 @@ const products = [
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(products.filter((product) => product.category === category));
-      },1000);
+      },2000);
     });
   };

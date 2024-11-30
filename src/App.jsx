@@ -7,23 +7,23 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
-  return(
-  <div>
-    return <BrowserRouter>
+  return (
+   <div>
+  <BrowserRouter>
   <div className = "navbar">
     <Brand />
     <NavBar />
-    </div>
+  </div>
     <Routes>
-      <Route path="/" element={<h1>Home</h1>} />
+      <Route path="/" element={<ItemListContainer greeting="Bienvenidos!" />} />
+      <Route path="/category/:category" element={<ItemListContainer />} />
+      <Route path="*" element={<h1>404. No existe el enlace</h1>} />
     </Routes>
 
-    <ItemListContainer greeting="Bienvenidos! a todos"/>
-    <footer>
     <Footer />
-    </footer>
+
     </BrowserRouter>
-  </div>
+    </div> 
   );
 }
 

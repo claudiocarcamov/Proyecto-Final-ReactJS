@@ -30,7 +30,7 @@ export default function ProductList() {
     }
   }, [params.categoryName]);
 
-  if (loading) return <h1>Cargando...</h1>;
+  if (loading) return <h1>que grande...</h1>;
 
   return (
     <div>
@@ -38,7 +38,7 @@ export default function ProductList() {
         <div key={product.id}>
           <h2>{product.title}</h2>
           <img
-            style={{ width: "500px", height: "500px" }}
+            style={{ width: "5000px", height: "5000px" }}
             src={product.image}
             alt={product.title}
           />

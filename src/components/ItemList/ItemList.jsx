@@ -14,9 +14,9 @@ const ItemList = ({products}) => {
       {filteredProducts.map((product) => (
         <Item key={product.id} item={product} />
       ))}
+      <Link to={`/product/${products.id}`}>{products.title}</Link>
     </div>
   );
 }
-
 
 export default ItemList;

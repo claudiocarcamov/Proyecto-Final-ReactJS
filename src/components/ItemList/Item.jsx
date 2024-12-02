@@ -1,22 +1,18 @@
 import useCount from "../../hooks/useCount";
 import ItemCount from "../ItemCount/ItemCount";
 import "./Item.css";
+import "../ItemDetailContainer";
+import { Link } from "react-router-dom";
 
 export default function Item({ item }) {
   const { count, increment, decrement } = useCount(0);
-
-  const onAdd = (nombreDeItem, cantidadaLlevar) => {
-    console.log("nombreDeItem: ", nombreDeItem);
-    console.log("cantidadaLlevar: ", cantidadaLlevar);
-  };
 
   return (
     <div className="item__container">
       <div className="item--img__container">
         <img className="item--img" src={item.image} alt={item.title} />
       </div>
-      <h2 className="item--title">{item.title}</h2>
-      <p className="item--description">{item.description}</p>
+      <h2 className="item--title"><Link to={`/product/${item.id}`}>{item.title}</Link></h2>
       <p className="item--price">${item.price}</p>
       <div className="item--counter__container">
         <ItemCount

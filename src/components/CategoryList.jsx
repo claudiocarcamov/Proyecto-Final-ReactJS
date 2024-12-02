@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
     const MIS_RUTAS = [
         {
-          path: "/category/home",
+          path: "/",
           label: "Home",
         },
         {

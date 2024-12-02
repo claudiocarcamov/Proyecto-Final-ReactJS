@@ -1,12 +1,22 @@
 import Item from "./Item";
 import "./Item.css";
+import { Link, useParams } from "react-router-dom";
 
-export default function ItemList({ products }) {
-  return (
-    <div className="item--list__container">
-      {products.map((product) => (
+const ItemList = ({products}) => {
+  const {category} = useParams()
+  console.log(category)
+  const filteredProducts = category
+      ? products.filter(product => product.category === category)
+      : products;
+
+      return (
+        <div className="item--list__container">
+      {filteredProducts.map((product) => (
         <Item key={product.id} item={product} />
       ))}
     </div>
   );
 }
+
+
+export default ItemList;

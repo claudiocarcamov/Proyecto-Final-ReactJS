@@ -16,7 +16,7 @@ function App() {
   </div>
     <Routes>
       <Route path="/" element={<ItemListContainer greeting="Bienvenidos!" />} />
-      <Route path="/category/:category" element={<ItemListContainer />} />
+      <Route path="/category/:category" element={<ItemListContainer greeting ="Filtro por categoría" />} />
       <Route path="*" element={<h1>404. No existe el enlace</h1>} />
     </Routes>
 

@@ -9,7 +9,7 @@ const products = [
         "El yoda bebé como siempre lo quisiste!",
       image: "https://images.pexels.com/photos/5558237/pexels-photo-5558237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       stock: 3,
-      category: "objetosrandom",
+      category: "random",
     },
     {
       id: 2,
@@ -51,7 +51,7 @@ const products = [
         "Para coleccionar y tener muchos más",
       image: "https://images.pexels.com/photos/264905/pexels-photo-264905.jpeg",
       stock: 10,
-      category: "objetosrandom",
+      category: "random",
     },
     {
       id: 6,
@@ -62,7 +62,7 @@ const products = [
         "Más terrorífico que nunca. Ese Chucky da mucho miedo!!!",
       image: "https://images.pexels.com/photos/6471231/pexels-photo-6471231.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       stock: 1,
-      category: "muyextranos",
+      category: "clasicos",
     },
   ];
   

@@ -1,9 +1,21 @@
-import Item from "./Item";
+import Item from "../ItemList/Item";
 import "./Item.css";
+import {memo} from "react"
 import { Link, useParams } from "react-router-dom";
 
-const ItemList = ({products}) => {
-  const {category} = useParams()
+function ItemList({products}) {
+  console.log(products)
+  console.log(products[0])
+  console.log(products[0].image)
+  /*return (
+    <div className="container">
+    <h1>{products[0].title}</h1>
+    {products.map(product => <Item key={product.id} product={product} />)}
+    </div>
+  )
+}*/
+
+const {category} = useParams()
   console.log(category)
   const filteredProducts = category
       ? products.filter(product => product.category === category)
@@ -19,4 +31,4 @@ const ItemList = ({products}) => {
   );
 }
 
-export default ItemList;
+export default memo(ItemList)

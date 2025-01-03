@@ -1,17 +1,19 @@
 import ItemList from "../components/ItemList/ItemList";
 import useProducts from "../hooks/useProducts";
 import { useParams } from "react-router-dom";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../services/firebase";
 
 const ItemDetailContainer = () => {
     const { isLoading: productsLoading, products } = useProducts();
-  //const { product, isLoading: productLoading } = useProduct(4);
-  if (productsLoading) return <h1>Cargando..</h1>;
+
+  if (productsLoading) return <h1>Cargando...</h1>;
 
     const { id } = useParams();
-    const product = products.find( item => item.id === parseInt(id))
+    const product = products.find( item => item.id === id)
 
     if(!product){
-        return <p>Producto no encontrado</p>
+        return <h2>Producto no encontrado</h2>
     }
 
   return (
